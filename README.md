@@ -1,3 +1,7 @@
 # OSCP_CheatSheet
 
-test
+## Portscan
+
+## Enumration
+
+## Password Crack
