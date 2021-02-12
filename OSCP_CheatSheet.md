@@ -4,8 +4,16 @@
 - pingscan  
 `sudo nmap -sn 10.11.1.0/24 -n -oA 10.11.1.0_24-pingscan`
 
-- TCP Synscan all port
+- ArpScan  
+`netdiscover -r 10.11.1.0/24`
+
+- TCP Synscan all port  
 `sudo nmap -sS -p- 10.11.1.1 -oA 10.11.1.1-tcp-allscan`
+
+- netbios  
+`sudo nbtscan -r 10.11.1.0/24`
+
+
 ## Enumration
 
 ## Password Crack
