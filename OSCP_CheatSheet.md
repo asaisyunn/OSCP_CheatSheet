@@ -26,3 +26,7 @@ File transfer `nc -nlvp 9999 > test.txt`
 
 - Telnet  
 `telnet 192.168.1.1 443`
+
+## nikto
+-http-basi pattern  
+`nikto -Display on -host 10.11.1.71 -o 10.11.1.71-80-nikto.txt`
