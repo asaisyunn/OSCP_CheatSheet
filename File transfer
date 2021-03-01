@@ -1,0 +1,16 @@
+
+## File transfer
+### curl
+`curl -o <filename> <URL>`
+
+### wget
+`wget -O <filename> <URL>`
+
+
+### axel
+`axel -a -n 20 -o <filename> <URL>`
+
+### Netcat
+`nc -nlvp 4444`
+
+`nc -nv 10.11.0.22 4444`

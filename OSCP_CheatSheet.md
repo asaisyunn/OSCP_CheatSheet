@@ -7,7 +7,7 @@
 - ArpScan  
 `netdiscover -r 10.11.1.0/24`
 
-- TCP Synscan all port  
+- TCP Syn-scan all port  
 `sudo nmap -sS -p- 10.11.1.1 -oA 10.11.1.1-tcp-allscan`
 
 - netbios  
@@ -30,3 +30,8 @@ File transfer `nc -nlvp 9999 > test.txt`
 ## nikto
 -http-basi pattern  
 `nikto -Display on -host 10.11.1.71 -o 10.11.1.71-80-nikto.txt`
+
+
+## 権限昇格(Linux)
+
+- sudo設定
