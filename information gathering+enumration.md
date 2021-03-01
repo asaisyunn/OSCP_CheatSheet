@@ -16,4 +16,4 @@
 ### tcp spec service scan
 `nmap -sS -A -v -p <port> <targetip>`
 
-## Othertool
+### ftp
