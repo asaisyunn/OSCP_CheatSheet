@@ -17,3 +17,5 @@ bloodhoundの起動
 3. 作成したzipファイルをkaliへ転送して、Bloodhoundにアップロード
 4. 左のフィルターで取得したユーザを選択して、pwn済みのアイコンを付けて、Analysisで分析
 ![bloodhound_1](/images/bloodhound_1.jpg)
+
+https://gist.github.com/TarlogicSecurity/2f221924fef8c14a1d8e29f3cb5c5c4a
