@@ -12,5 +12,8 @@ browserでneo4jへ接続
 bloodhoundの起動
 
     bloodhound
-
+1. SharpHound.exeをアップロードする。
+2. `SharpHound.exe -c all`で情報収集
+3. 作成したzipファイルをkaliへ転送して、Bloodhoundにアップロード
+4. 左のフィルターで取得したユーザを選択して、pwn済みのアイコンを付けて、Analysisで分析
 ![bloodhound_1](/images/bloodhound_1.jpg)
