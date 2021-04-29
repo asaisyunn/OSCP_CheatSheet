@@ -13,4 +13,4 @@ bloodhoundの起動
 
     bloodhound
 
-![bloodhound_1](images\bloodhound_1.jpg)
+![bloodhound_1](/images/bloodhound_1.jpg)
