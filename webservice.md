@@ -16,7 +16,28 @@
 
 ### WordPress
 
-    wpscan --url http://tartarsauce.htb/webservices/wp/ -e ap,vt,cb,dbe,u -o wpscan.log -vv
+- Vulnerable Plugins
+
+    wpscan --url http://tartarsauce.htb/webservices/wp/ -e vp,vt,cb,dbe,u --plugins-detection aggressive -vv
+
+- Popular Plugins
+
+    wpscan --url http://tartarsauce.htb/webservices/wp/ -e p,vt,cb,dbe,u --plugins-detection aggressive -vv
+
+- full
+
+    wpscan --url http://tartarsauce.htb/webservices/wp/ -e ap,vt,cb,dbe,u --plugins-detection aggressive -o wpscan.log -vv
+
+- passwordcrack
+ユーザ名がとれている場合で、xmlrpcが使えるなら以下そのままで問題ない。（使えない場合`wp-login`）
+
+httpsの場合
+    wpscan --url https://brainfuck.htb/ -e u -P /usr/share/wordlists/rockyou.txt --password-attack xmlrpc --disable-tls-checks
+
+httpの場合
+    wpscan --url http://brainfuck.htb/ -e u -P /usr/share/wordlists/rockyou.txt --password-attack xmlrpc
+
+
 
 ### Drupal
 
