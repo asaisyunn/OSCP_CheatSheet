@@ -1,10 +1,13 @@
-### smbclient  
+# nmap
+    sudo nmap -sVC -vv -n --script "safe or smb-enum-*" -p 139,445 10.129.1.171
 
-#接続
+# smbclient  
+
+### 接続
     smbclient -L <ipaddr>
     smbclient \\\\10.129.138.203\\Replication
 
-#再起的にファイルを取得
+### 再起的にファイルを取得
 
     $ smbclient \\\\10.129.138.203\\Replication               
     Enter WORKGROUP\asai's password:
